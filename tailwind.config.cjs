@@ -20,14 +20,16 @@ module.exports = {
     extend: {
       colors: {
         azul: {
-          1: '#465EFF',
-          2: '#54DCFC',
+          1: '#0F62FE',
+          2: '#001D6C',
         },
-        verde: {
-          1: '#00EBD0'
+        cinza: {
+          1: '#F2F4F8',
+          2: '#21272A',
+          3: '#697077',
         },
-        roxo: {
-          1: '#BDB6FF'
+        vermelho: {
+          1: '#DA1E28'
         }
       }
     },

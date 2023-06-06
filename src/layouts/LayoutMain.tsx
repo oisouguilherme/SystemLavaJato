@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Outlet } from "react-router-dom";
 const HeaderMain = lazy(() => import("../components/HeaderMain"));
-const FooterMain = lazy(() => import("../components/FooterMain"));
 
 function RouteFallback() {
  return (
@@ -18,7 +17,6 @@ export default function LayoutMain() {
                     <Outlet />
                 </Suspense>
             </main>
-            <FooterMain />
         </>
     )
 }
