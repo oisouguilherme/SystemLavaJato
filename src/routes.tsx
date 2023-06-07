@@ -9,6 +9,10 @@ import Equipe from "./pages/Equipe/Equipe";
 import Relatorio from "./pages/Relatorio/Relatorio";
 import Info from "./pages/Info/Info";
 import Clientes from "./pages/Clientes/Clientes";
+import BuscarNovo from "./pages/Atendimento/BuscarNovo";
+import { AddNovo } from "./pages/Atendimento/AddNovo";
+import NovoCusto from "./pages/Custo/NovoCusto";
+import EditarCusto from "./pages/Custo/EditarCusto";
 
 const LayoutMain = lazy(() => import("./layouts/LayoutMain"));
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -40,28 +44,47 @@ const router = createBrowserRouter([
         path: "/menu",
         element: <Home />,
       },
+      //Atendimentos
       {
-        path: "/menuatendimento",
+        path: "atendimento",
         element: <Atendimento />,
       },
       {
-        path: "/menuclientes",
-        element: <Clientes />,
+        path: "buscar-atendimento",
+        element: <BuscarNovo />,
       },
       {
-        path: "/menucusto",
+        path: "adicionar-atendimento",
+        element: <AddNovo />,
+      },
+      //Custos
+      {
+        path: "custo",
         element: <Custo />,
       },
       {
-        path: "/menuequipe",
+        path: "novo-custo",
+        element: <NovoCusto />,
+      },
+      {
+        path: "editar-custo",
+        element: <EditarCusto />,
+      },
+      //Clientes
+      {
+        path: "clientes",
+        element: <Clientes />,
+      },
+      {
+        path: "equipe",
         element: <Equipe />,
       },
       {
-        path: "/menurelatorio",
+        path: "relatorio",
         element: <Relatorio />,
       },
       {
-        path: "/menuinfo",
+        path: "info",
         element: <Info />,
       },
     ],
