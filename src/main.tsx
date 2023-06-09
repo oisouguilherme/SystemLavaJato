@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import './assets/styles/main.scss'
 import ProvideLayout from './contexts/UseLayout';
+import { ToastContainer } from 'react-toastify';
 const Routes = lazy(() => import('./routes'));
 
 function Splash() {
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <ProvideLayout>
         <Routes />
       </ProvideLayout>
+      <ToastContainer/>
     </Suspense>
   </React.StrictMode>,
 )

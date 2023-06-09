@@ -91,11 +91,11 @@ const router = createBrowserRouter([
         element: <Info />,
       },
       {
-        path: "editar-dados",
+        path: "alterar-senha",
         element: <EditDados/>,
       },
       {
-        path: "alterar-senha",
+        path: "editar-dados",
         element: <MudarSenha />,
       },
     ],
