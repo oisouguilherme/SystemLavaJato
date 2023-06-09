@@ -2,7 +2,7 @@ import { useState } from 'react';
 import IconThreepoints from "../../../assets/images/threePoints.svg";
 import { Link } from 'react-router-dom';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ModalButton = () => {
@@ -15,9 +15,14 @@ const ModalButton = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const RemoveItemSucess = () => {
+    setIsModalOpen(false);
 
     toast.error("Removido com Sucesso");
   };
+
 
   return (
     <div>
@@ -35,7 +40,7 @@ const ModalButton = () => {
             </div>
             <p className='mb-4 text-start font-normal'>O que você deseja fazer?</p>
             <div className='flex justify-between'>
-              <button className="mt-4 text-vermelho-1 w-1/2 py-2 px-4 " onClick={closeModal} >
+              <button className="mt-4 text-vermelho-1 w-1/2 py-2 px-4 " onClick={RemoveItemSucess} >
                 Remover
               </button>
               <Link to="/menu/editar-custo" className="mt-4 bg-blue-500 hover:bg-blue-600 text-white w-1/2 py-2 px-4 ">
