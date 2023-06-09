@@ -13,6 +13,8 @@ import BuscarNovo from "./pages/Atendimento/BuscarNovo";
 import { AddNovo } from "./pages/Atendimento/AddNovo";
 import NovoCusto from "./pages/Custo/NovoCusto";
 import EditarCusto from "./pages/Custo/EditarCusto";
+import { EditDados } from "./pages/Info/EditDados";
+import { MudarSenha } from "./pages/Info/MudarSenha";
 
 const LayoutMain = lazy(() => import("./layouts/LayoutMain"));
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -83,9 +85,18 @@ const router = createBrowserRouter([
         path: "relatorio",
         element: <Relatorio />,
       },
+      //informações e alteração de dados
       {
         path: "info",
         element: <Info />,
+      },
+      {
+        path: "editar-dados",
+        element: <EditDados/>,
+      },
+      {
+        path: "alterar-senha",
+        element: <MudarSenha />,
       },
     ],
   },

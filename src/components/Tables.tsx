@@ -4,7 +4,7 @@ import IconFixed from '../assets/images/fixed.svg'
 import IconBandeira from '../assets/images/band.svg'
 import IconPoint from '../assets/images/points.svg'
 
-export function Kaban(){
+export function Tables(){
   return(
     <div className='bg-white p-3 space-y-3'>
       <div className=''>

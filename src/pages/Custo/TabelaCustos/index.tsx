@@ -1,4 +1,3 @@
-import IconThreepoints from "../../../assets/images/threePoints.svg";
 import ModalButton from "../Modal";
 
 export function TabelaCustos({date}:any) {
